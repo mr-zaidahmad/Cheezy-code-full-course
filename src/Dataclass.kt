@@ -31,7 +31,7 @@ fun main(){
     println(p1.hashCode())   //the
     println(p2.hashCode())
 }
-data class prsn(var name : String,var age: Int){
+data class prsn(var name : String,var age: Int){ //data class must have alteast one constructor
                   //now just by adding Data keyword look
                   // at the output of the code.it now actual data.
 }
