@@ -4,18 +4,18 @@
 //Apply function.
 //apply is a scope function that is used to set multiple properties of an object at once.
 //It refers to the object as this and returns the object itself after the block executes.
-//fun main(){
-//  //when using simple
-//    var obj=Employees()
-//
-//    obj.apply {
-//        name="Zaid"  //no need to write obj.name
-//        id=342      //no need to write obj.id
-//        duty="Intern"   //no need to write obj.duty
-//    }
-//    println(obj)
-//}
-//data class Employees(var name : String="",var id : Int=1 ,var duty : String="")
+fun main(){
+  //when using simple
+    var obj=Employees()
+
+    obj.apply {
+        name="Zaid"  //no need to write obj.name
+        id=342      //no need to write obj.id
+        duty="Intern"   //no need to write obj.duty
+    }
+    println(obj)
+}
+data class Employees(var name : String="",var id : Int=1 ,var duty : String="")
 
 //let function
 //let is a scope function that executes a block of code on a non-null object. It refers to the
@@ -36,6 +36,8 @@
 //        println(it.duty)  //no need to write obj.duty
 //        println(it.id)    //no need to write obj.id
 //    }
+//
+//
 //
 //}
 //data class Employees(var name : String="",var id : Int=1 ,var duty : String="")
@@ -69,20 +71,20 @@
 //in simple word with is the upgraded version of let. it let we have to define
 //it with every obj but here there is no need for that.
 
-fun main(){
-    //when using simple
-    var obj: Employees=Employees()
-    obj?.name="Zaid"
-    obj?.duty="Intern"
-    obj?.id=523
-    println(obj)
-    println("----------------------")
-
-    with(obj){ //with is used here
-        name="Zaid"   //with the help of with fun we only write the name.no obj,no it just name.
-        duty="Intern" //with the help of with fun we only write the duty.no obj,no it just duty.
-        id=523       //with the help of with fun we only write the id.no obj,no it just id.
-    }
-    println(obj)
-}
-data class Employees(var name : String="",var id : Int=1 ,var duty : String="")
+//fun main(){
+//    //when using simple
+//    var obj: Employees=Employees()
+//    obj?.name="Zaid"
+//    obj?.duty="Intern"
+//    obj?.id=523
+//    println(obj)
+//    println("----------------------")
+//
+//    with(obj){ //with is used here
+//        name="Zaid"   //with the help of with fun we only write the name.no obj,no it just name.
+//        duty="Intern" //with the help of with fun we only write the duty.no obj,no it just duty.
+//        id=523       //with the help of with fun we only write the id.no obj,no it just id.
+//    }
+//    println(obj)
+//}
+//data class Employees(var name : String="",var id : Int=1 ,var duty : String="")
